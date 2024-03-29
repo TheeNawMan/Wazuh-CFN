@@ -46,43 +46,23 @@ Mappings:
     t2.large:
       Arch: HVM64
     t2.medium:
-      Arch: HVM64
-    t2.micro:
-      Arch: HVM64
+      Arch: HVMUBUNTU64
     t2.xlarge:
       Arch: HVM64
-    t2.small:
-      Arch: HVM64
-
+    
   AWSRegionArch2AMI:
     us-east-1:
-      HVM64: ami-0c6b1d09930fac512
-      HVMCENTOS7: ami-02eac2c0129f6376b
-      HVMUBUNTU64: ami-024a64a6685d05041
-      HVMREDHAT7: ami-6871a115
-      HVMDEBIAN: ami-0357081a1383dc76b
-      HVMWINDOWS: ami-0a9ca0496f746e6e0
+      HVM64: ami-0c101f26f147fa7fd
+      HVMUBUNTU64: ami-080e1f13689e07408
     us-east-2:
       HVM64: ami-0ebbf2179e615c338
-      HVMCENTOS7: ami-0f2b4fc905b0bd1f1
       HVMUBUNTU64: ami-097ebb39620d8d54b
-      HVMREDHAT7: ami-03291866
-      HVMDEBIAN: ami-09c10a66337c79669
-      HVMWINDOWS: ami-0087a83ed4a60d1e9
     us-west-1:
       HVM64: ami-015954d5e5548d13b
       HVMUBUNTU64: ami-040dfc3ebf1bfc4f6
-      HVMCENTOS7: ami-074e2d6769f445be5
-      HVMREDHAT7: ami-18726478
-      HVMDEBIAN: ami-0adbaf2e0ce044437
-      HVMWINDOWS: ami-05bf35c67c02cd868
     us-west-2:
       HVM64: ami-0cb72367e98845d43
       HVMUBUNTU64: ami-0196ce5c34425a906
-      HVMCENTOS7: ami-01ed306a12b7d1c96
-      HVMREDHAT7: ami-28e07e50
-      HVMDEBIAN: ami-05a3ef6744aa96514
-      HVMWINDOWS: ami-04ad37d2932b886c0
 
 Resources:
   WazuhAIO:
