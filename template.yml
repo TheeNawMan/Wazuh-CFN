@@ -46,7 +46,7 @@ Mappings:
     t2.large:
       Arch: HVM64
     t2.medium:
-      Arch: HVMUBUNTU64
+      Arch: HVM64
     t2.xlarge:
       Arch: HVM64
     
@@ -85,9 +85,9 @@ Resources:
         Fn::Base64: !Sub |
           #!/bin/bash
           echo "Downloading script..." > ${LogFile} 
-          curl -so ~/all-in-one-installation.sh https://raw.githubusercontent.com/wazuh/wazuh-documentation/${WazuhVersion}/resources/open-distro/unattended-installation/all-in-one-installation.sh 
+          curl -so https://packages.wazuh.com/4.7/wazuh-install.sh
           echo "Installing script..." > ${LogFile}
-          bash ~/all-in-one-installation.sh > ${LogFile}
+          bash ./wazuh-install.sh -a > ${LogFile}
     Type: AWS::EC2::Instance
   
   SecurityGroup:
