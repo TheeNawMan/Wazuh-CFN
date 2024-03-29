@@ -84,10 +84,8 @@ Resources:
       UserData:
         Fn::Base64: !Sub |
           #!/bin/bash
-          echo "Downloading script..." > ${LogFile} 
-          curl -so https://packages.wazuh.com/4.7/wazuh-install.sh
-          echo "Installing script..." > ${LogFile}
-          bash ./wazuh-install.sh -a > ${LogFile}
+          echo "Running Script..." > ${LogFile} 
+          curl -so https://packages.wazuh.com/4.7/wazuh-install.sh && ./wazuh-install.sh -a
     Type: AWS::EC2::Instance
   
   SecurityGroup:
